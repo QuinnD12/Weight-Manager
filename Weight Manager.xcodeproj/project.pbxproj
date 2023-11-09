@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		393845E32AFA9C20005F0B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393845E22AFA9C20005F0B6B /* Assets.xcassets */; };
+		393845E62AFA9C20005F0B6B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 393845E52AFA9C20005F0B6B /* Preview Assets.xcassets */; };
+		393845F02AFA9C20005F0B6B /* Weight_ManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393845EF2AFA9C20005F0B6B /* Weight_ManagerTests.swift */; };
+		393845FA2AFA9C20005F0B6B /* Weight_ManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393845F92AFA9C20005F0B6B /* Weight_ManagerUITests.swift */; };
+		393845FC2AFA9C20005F0B6B /* Weight_ManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393845FB2AFA9C20005F0B6B /* Weight_ManagerUITestsLaunchTests.swift */; };
+		3938460E2AFA9C3A005F0B6B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393846092AFA9C3A005F0B6B /* AddView.swift */; };
+		3938460F2AFA9C3A005F0B6B /* Firebase Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938460A2AFA9C3A005F0B6B /* Firebase Manager.swift */; };
+		393846102AFA9C3A005F0B6B /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938460B2AFA9C3A005F0B6B /* LogView.swift */; };
+		393846112AFA9C3A005F0B6B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938460C2AFA9C3A005F0B6B /* ProfileView.swift */; };
+		393846122AFA9C3A005F0B6B /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938460D2AFA9C3A005F0B6B /* App.swift */; };
+		393846182AFA9CF3005F0B6B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 393846172AFA9CF3005F0B6B /* FirebaseDatabase */; };
+		3938461A2AFA9CF3005F0B6B /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 393846192AFA9CF3005F0B6B /* FirebaseDatabaseSwift */; };
+		3938461C2AFA9E9F005F0B6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3938461B2AFA9E9F005F0B6B /* GoogleService-Info.plist */; };
+		3938461E2AFAA28A005F0B6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938461D2AFAA28A005F0B6B /* ContentView.swift */; };
+		393846202AFAA2D1005F0B6B /* StyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938461F2AFAA2D1005F0B6B /* StyleView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		393845EC2AFA9C20005F0B6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 393845D32AFA9C1F005F0B6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 393845DA2AFA9C1F005F0B6B;
+			remoteInfo = "Weight Manager";
+		};
+		393845F62AFA9C20005F0B6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 393845D32AFA9C1F005F0B6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 393845DA2AFA9C1F005F0B6B;
+			remoteInfo = "Weight Manager";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		393845DB2AFA9C1F005F0B6B /* Weight Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		393845E22AFA9C20005F0B6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		393845E52AFA9C20005F0B6B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		393845EB2AFA9C20005F0B6B /* Weight ManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weight ManagerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		393845EF2AFA9C20005F0B6B /* Weight_ManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight_ManagerTests.swift; sourceTree = "<group>"; };
+		393845F52AFA9C20005F0B6B /* Weight ManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weight ManagerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		393845F92AFA9C20005F0B6B /* Weight_ManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight_ManagerUITests.swift; sourceTree = "<group>"; };
+		393845FB2AFA9C20005F0B6B /* Weight_ManagerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight_ManagerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		393846082AFA9C39005F0B6B /* Weight Manager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weight Manager-Bridging-Header.h"; sourceTree = "<group>"; };
+		393846092AFA9C3A005F0B6B /* AddView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		3938460A2AFA9C3A005F0B6B /* Firebase Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Firebase Manager.swift"; sourceTree = "<group>"; };
+		3938460B2AFA9C3A005F0B6B /* LogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		3938460C2AFA9C3A005F0B6B /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3938460D2AFA9C3A005F0B6B /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		3938461B2AFA9E9F005F0B6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3938461D2AFAA28A005F0B6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3938461F2AFAA2D1005F0B6B /* StyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		393845D82AFA9C1F005F0B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3938461A2AFA9CF3005F0B6B /* FirebaseDatabaseSwift in Frameworks */,
+				393846182AFA9CF3005F0B6B /* FirebaseDatabase in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393845E82AFA9C20005F0B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393845F22AFA9C20005F0B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		393845D22AFA9C1F005F0B6B = {
+			isa = PBXGroup;
+			children = (
+				3938461B2AFA9E9F005F0B6B /* GoogleService-Info.plist */,
+				393845DD2AFA9C1F005F0B6B /* Weight Manager */,
+				393845EE2AFA9C20005F0B6B /* Weight ManagerTests */,
+				393845F82AFA9C20005F0B6B /* Weight ManagerUITests */,
+				393845DC2AFA9C1F005F0B6B /* Products */,
+				393846162AFA9CF3005F0B6B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		393845DC2AFA9C1F005F0B6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				393845DB2AFA9C1F005F0B6B /* Weight Manager.app */,
+				393845EB2AFA9C20005F0B6B /* Weight ManagerTests.xctest */,
+				393845F52AFA9C20005F0B6B /* Weight ManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		393845DD2AFA9C1F005F0B6B /* Weight Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3938460D2AFA9C3A005F0B6B /* App.swift */,
+				3938461D2AFAA28A005F0B6B /* ContentView.swift */,
+				3938461F2AFAA2D1005F0B6B /* StyleView.swift */,
+				393846092AFA9C3A005F0B6B /* AddView.swift */,
+				3938460A2AFA9C3A005F0B6B /* Firebase Manager.swift */,
+				3938460B2AFA9C3A005F0B6B /* LogView.swift */,
+				3938460C2AFA9C3A005F0B6B /* ProfileView.swift */,
+				393845E22AFA9C20005F0B6B /* Assets.xcassets */,
+				393846082AFA9C39005F0B6B /* Weight Manager-Bridging-Header.h */,
+				393845E42AFA9C20005F0B6B /* Preview Content */,
+			);
+			path = "Weight Manager";
+			sourceTree = "<group>";
+		};
+		393845E42AFA9C20005F0B6B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				393845E52AFA9C20005F0B6B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		393845EE2AFA9C20005F0B6B /* Weight ManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				393845EF2AFA9C20005F0B6B /* Weight_ManagerTests.swift */,
+			);
+			path = "Weight ManagerTests";
+			sourceTree = "<group>";
+		};
+		393845F82AFA9C20005F0B6B /* Weight ManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				393845F92AFA9C20005F0B6B /* Weight_ManagerUITests.swift */,
+				393845FB2AFA9C20005F0B6B /* Weight_ManagerUITestsLaunchTests.swift */,
+			);
+			path = "Weight ManagerUITests";
+			sourceTree = "<group>";
+		};
+		393846162AFA9CF3005F0B6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		393845DA2AFA9C1F005F0B6B /* Weight Manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 393845FF2AFA9C20005F0B6B /* Build configuration list for PBXNativeTarget "Weight Manager" */;
+			buildPhases = (
+				393845D72AFA9C1F005F0B6B /* Sources */,
+				393845D82AFA9C1F005F0B6B /* Frameworks */,
+				393845D92AFA9C1F005F0B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weight Manager";
+			packageProductDependencies = (
+				393846172AFA9CF3005F0B6B /* FirebaseDatabase */,
+				393846192AFA9CF3005F0B6B /* FirebaseDatabaseSwift */,
+			);
+			productName = "Weight Manager";
+			productReference = 393845DB2AFA9C1F005F0B6B /* Weight Manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		393845EA2AFA9C20005F0B6B /* Weight ManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 393846022AFA9C20005F0B6B /* Build configuration list for PBXNativeTarget "Weight ManagerTests" */;
+			buildPhases = (
+				393845E72AFA9C20005F0B6B /* Sources */,
+				393845E82AFA9C20005F0B6B /* Frameworks */,
+				393845E92AFA9C20005F0B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				393845ED2AFA9C20005F0B6B /* PBXTargetDependency */,
+			);
+			name = "Weight ManagerTests";
+			productName = "Weight ManagerTests";
+			productReference = 393845EB2AFA9C20005F0B6B /* Weight ManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		393845F42AFA9C20005F0B6B /* Weight ManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 393846052AFA9C20005F0B6B /* Build configuration list for PBXNativeTarget "Weight ManagerUITests" */;
+			buildPhases = (
+				393845F12AFA9C20005F0B6B /* Sources */,
+				393845F22AFA9C20005F0B6B /* Frameworks */,
+				393845F32AFA9C20005F0B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				393845F72AFA9C20005F0B6B /* PBXTargetDependency */,
+			);
+			name = "Weight ManagerUITests";
+			productName = "Weight ManagerUITests";
+			productReference = 393845F52AFA9C20005F0B6B /* Weight ManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		393845D32AFA9C1F005F0B6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					393845DA2AFA9C1F005F0B6B = {
+						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1500;
+					};
+					393845EA2AFA9C20005F0B6B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 393845DA2AFA9C1F005F0B6B;
+					};
+					393845F42AFA9C20005F0B6B = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 393845DA2AFA9C1F005F0B6B;
+					};
+				};
+			};
+			buildConfigurationList = 393845D62AFA9C1F005F0B6B /* Build configuration list for PBXProject "Weight Manager" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 393845D22AFA9C1F005F0B6B;
+			packageReferences = (
+				393846132AFA9C82005F0B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 393845DC2AFA9C1F005F0B6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				393845DA2AFA9C1F005F0B6B /* Weight Manager */,
+				393845EA2AFA9C20005F0B6B /* Weight ManagerTests */,
+				393845F42AFA9C20005F0B6B /* Weight ManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		393845D92AFA9C1F005F0B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393845E62AFA9C20005F0B6B /* Preview Assets.xcassets in Resources */,
+				393845E32AFA9C20005F0B6B /* Assets.xcassets in Resources */,
+				3938461C2AFA9E9F005F0B6B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393845E92AFA9C20005F0B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393845F32AFA9C20005F0B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		393845D72AFA9C1F005F0B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393846112AFA9C3A005F0B6B /* ProfileView.swift in Sources */,
+				3938460E2AFA9C3A005F0B6B /* AddView.swift in Sources */,
+				3938461E2AFAA28A005F0B6B /* ContentView.swift in Sources */,
+				393846102AFA9C3A005F0B6B /* LogView.swift in Sources */,
+				393846122AFA9C3A005F0B6B /* App.swift in Sources */,
+				393846202AFAA2D1005F0B6B /* StyleView.swift in Sources */,
+				3938460F2AFA9C3A005F0B6B /* Firebase Manager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393845E72AFA9C20005F0B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393845F02AFA9C20005F0B6B /* Weight_ManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		393845F12AFA9C20005F0B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				393845FC2AFA9C20005F0B6B /* Weight_ManagerUITestsLaunchTests.swift in Sources */,
+				393845FA2AFA9C20005F0B6B /* Weight_ManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		393845ED2AFA9C20005F0B6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 393845DA2AFA9C1F005F0B6B /* Weight Manager */;
+			targetProxy = 393845EC2AFA9C20005F0B6B /* PBXContainerItemProxy */;
+		};
+		393845F72AFA9C20005F0B6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 393845DA2AFA9C1F005F0B6B /* Weight Manager */;
+			targetProxy = 393845F62AFA9C20005F0B6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		393845FD2AFA9C20005F0B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		393845FE2AFA9C20005F0B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		393846002AFA9C20005F0B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Weight Manager/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PHS.Weight-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Weight Manager/Weight Manager-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		393846012AFA9C20005F0B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Weight Manager/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PHS.Weight-Manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Weight Manager/Weight Manager-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		393846032AFA9C20005F0B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PHS.Weight-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weight Manager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Weight Manager";
+			};
+			name = Debug;
+		};
+		393846042AFA9C20005F0B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PHS.Weight-ManagerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Weight Manager.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Weight Manager";
+			};
+			name = Release;
+		};
+		393846062AFA9C20005F0B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PHS.Weight-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Weight Manager";
+			};
+			name = Debug;
+		};
+		393846072AFA9C20005F0B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "PHS.Weight-ManagerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Weight Manager";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		393845D62AFA9C1F005F0B6B /* Build configuration list for PBXProject "Weight Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393845FD2AFA9C20005F0B6B /* Debug */,
+				393845FE2AFA9C20005F0B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		393845FF2AFA9C20005F0B6B /* Build configuration list for PBXNativeTarget "Weight Manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393846002AFA9C20005F0B6B /* Debug */,
+				393846012AFA9C20005F0B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		393846022AFA9C20005F0B6B /* Build configuration list for PBXNativeTarget "Weight ManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393846032AFA9C20005F0B6B /* Debug */,
+				393846042AFA9C20005F0B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		393846052AFA9C20005F0B6B /* Build configuration list for PBXNativeTarget "Weight ManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				393846062AFA9C20005F0B6B /* Debug */,
+				393846072AFA9C20005F0B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		393846132AFA9C82005F0B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		393846172AFA9CF3005F0B6B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 393846132AFA9C82005F0B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		393846192AFA9CF3005F0B6B /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 393846132AFA9C82005F0B6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 393845D32AFA9C1F005F0B6B /* Project object */;
+}
