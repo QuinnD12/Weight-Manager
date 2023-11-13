@@ -13,9 +13,11 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Home")
-                    .cfont(size: 150, shade: 0)
+                Text("Weight")
+                    .cfont(size: 110, shade: 0)
                     .padding(.top, 60)
+                Text("Management")
+                    .cfont(size: 90, shade: 0)
                 
                 Spacer()
                 
@@ -33,7 +35,7 @@ struct ContentView: View {
                         .cfont(size: 50)
                 }
                 
-                Spacer(minLength: 200)
+                Spacer(minLength: 150)
             }
         }.tint(Color(white: 0.3))
     }

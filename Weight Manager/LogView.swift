@@ -52,10 +52,10 @@ struct LogView: View {
                         entrys.append(Entry(date: date, value: Double(value)!))
                     }
                     
-                    
-                    minVal = miniumumEntry(entrys) - 1
-                    maxVal = maximumEntry(entrys) + 1
+                   
                     targetVar = Double(target)!
+                    minVal = (miniumumEntry(entrys) < targetVar ? miniumumEntry(entrys) : targetVar) - 3
+                    maxVal = (maximumEntry(entrys) > targetVar ? maximumEntry(entrys) : targetVar) + 3
                 }
             }
             

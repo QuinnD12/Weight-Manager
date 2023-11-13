@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     @ObservedObject var fm: FirebaseManager
     
-    let weightClasses = ["Select Target", "106", "113", "120", "126", "132", "138", "144", "150", "157", "165", "175", "190", "215", "285"]
+    let weightClasses = ["Select Target", "106", "113", "120", "126", "132", "138", "144", "150", "157", "165", "175", "190", "235", "285"]
     
     @State private var selectedClass = "Select Target"
     @State private var name = ""
