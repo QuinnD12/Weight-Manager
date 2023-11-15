@@ -20,10 +20,10 @@ struct LogView: View {
     
     @State private var name = ""
     @State private var alerted = false
-    @State var entrys: [Entry] = []
-    @State var targetVar: Double = 0
-    @State var minVal: Double = 100
-    @State var maxVal: Double = 300
+    @State private var entrys: [Entry] = []
+    @State private var targetVar: Double = 0
+    @State private var minVal: Double = 100
+    @State private var maxVal: Double = 300
     
     var body: some View {
         Text("View Log")
