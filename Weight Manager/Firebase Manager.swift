@@ -22,6 +22,8 @@ class FirebaseManager: ObservableObject {
 }
 
 
+
+//Other functions(not related to Firebase)
 func getDate() -> String {
     let now = Date.now
     let formatter = DateFormatter()
